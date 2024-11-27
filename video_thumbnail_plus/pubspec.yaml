@@ -1,0 +1,51 @@
+name: video_thumbnail_plus
+description: A flutter plugin for creating a thumbnail from a local video file or from a video URL.
+version: 1.0.0
+repository: https://github.com/maRci002/video_thumbnail_plus/video_thumbnail_plus
+issue_tracker: https://github.com/maRci002/video_thumbnail_plus/issues
+
+environment:
+  sdk: ^3.5.4
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+#  video_thumbnail_plus_platform_interface: 1.0.0
+#  video_thumbnail_plus_platform_interface:
+#    git:
+#      url: https://github.com/maRci002/video_thumbnail_plus.git
+#      path: video_thumbnail_plus_platform_interface
+  video_thumbnail_plus_platform_interface:
+     path: ../video_thumbnail_plus_platform_interface
+#  video_thumbnail_plus_web: 1.0.0
+#  video_thumbnail_plus_web:
+#    git:
+#      url: https://github.com/maRci002/video_thumbnail_plus.git
+#      path: video_thumbnail_plus_web
+  video_thumbnail_plus_web:
+     path: ../video_thumbnail_plus_web
+  cross_file: ^0.3.4+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.video_thumbnail_plus
+        pluginClass: VideoThumbnailPlusPlugin
+      ios:
+        pluginClass: VideoThumbnailPlusPlugin
+      web:        
+        default_package: video_thumbnail_plus_web
+
+topics:
+  - thumbnail
+  - video-thumbnail
+  - video-thumbnail-plus

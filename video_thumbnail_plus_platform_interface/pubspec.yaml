@@ -1,0 +1,23 @@
+name: video_thumbnail_plus_platform_interface
+description: A common platform interface for the video_thumbnail_plus plugin.
+version: 1.0.0
+repository: https://github.com/maRci002/video_thumbnail_plus/video_thumbnail_platform_interface
+issue_tracker: https://github.com/maRci002/video_thumbnail_plus/issues
+
+environment:
+  sdk: ^3.5.4
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  cross_file: ^0.3.4+2
+
+dev_dependencies:
+  lints: ^4.0.0
+
+topics:
+  - thumbnail
+  - video-thumbnail
+  - video-thumbnail-plus

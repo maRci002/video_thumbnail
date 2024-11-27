@@ -1,0 +1,39 @@
+name: video_thumbnail_plus_web
+description: The web implementation of video_thumbnail_plus.
+version: 1.0.0
+repository: https://github.com/maRci002/video_thumbnail_plus/video_thumbnail_plus_web
+issue_tracker: https://github.com/maRci002/video_thumbnail_plus/issues
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+#  video_thumbnail_plus_platform_interface: 1.0.0
+#  video_thumbnail_plus_platform_interface:
+#    git:
+#      url: https://github.com/maRci002/video_thumbnail_plus.git
+#      path: video_thumbnail_plus_platform_interface
+  video_thumbnail_plus_platform_interface:
+     path: ../video_thumbnail_plus_platform_interface
+  cross_file: ^0.3.4+2
+
+dev_dependencies:
+  lints: ^4.0.0
+
+flutter:
+  plugin:
+    implements: video_thumbnail_plus
+    platforms:
+      web:
+        pluginClass: VideoThumbnailPlusWeb
+        fileName: video_thumbnail_plus_web.dart
+
+topics:
+  - thumbnail
+  - video-thumbnail
+  - video-thumbnail-plus
